@@ -1,0 +1,24 @@
+{
+  "ScreenDimensions": {
+    "Mobile": {
+      "maxWidth": 848,
+      "minWidth": 464
+    },
+    "Tablet": {
+      "maxWidth": 1024,
+      "minWidth": 848
+    },
+    "Desktop": {
+      "maxWidth": 1408,
+      "minWidth": 1024
+    },
+    "superLargeDesktop": {
+      "maxWidth": 4000,
+      "minWidth": 1408
+    },
+    "superSmallMobile": {
+      "maxWidth": 464,
+      "minWidth": 0
+    }
+  }
+}

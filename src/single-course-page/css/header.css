@@ -1,0 +1,37 @@
+.header-container {
+  background-color: rgb(27, 25, 25);
+  color: white;
+  padding: 2.5% 15%;
+}
+.numOfTopic{
+    font-weight: bold;
+    color: #cec0fc;
+}
+.numOfTopic:hover, .ratings:hover{
+    cursor: pointer;
+}
+.topics{
+    margin-bottom: 1rem;
+}
+.header-title{
+    font-size:30px;
+    font-weight: bold;
+    width: 70%;
+}
+.header-paragraph{
+    width: 60%;
+}
+.header-rating{
+    color:burlywood;
+}
+.ratings{
+    text-decoration: underline;   
+    color: #cec0fc;
+}
+.stars-rating-students, .created-by{
+    font-size:15px ;
+    margin-bottom: .5rem;
+}
+.last-updated, .lang, .subtitles{
+    margin: 0 10px;
+}

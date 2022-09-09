@@ -1,0 +1,28 @@
+.descrip-container {
+  margin-bottom: 3.2rem;
+}
+.show-button {
+  color: #5624d0;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 30px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.size-it {
+  font-size: 10px;
+}
+.butt-icon {
+  margin-left: 10px;
+}
+.to-who {
+  margin-top: 3.2rem;
+}

@@ -1,0 +1,18 @@
+.requires-continer {
+  margin-bottom: 3.2rem;
+}
+.requires-list-element {
+  display: flex;
+  margin-bottom: 10px;
+}
+.requires-list-dot {
+  font-size: 7px;
+  height: 7px;
+  margin-top: 8px;
+}
+.requires-element {
+  margin-left: 20px;
+  font-weight: 300;
+  display: flex;
+  line-height: 20px;
+}
