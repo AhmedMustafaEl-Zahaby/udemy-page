@@ -1,4 +1,4 @@
-# udemy-page
+# Udemy-page using React JS
 
 Cloning Udemy homepage and courses single page
 
