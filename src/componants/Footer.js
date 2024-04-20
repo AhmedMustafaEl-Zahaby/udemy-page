@@ -55,9 +55,6 @@ function Footer() {
             <a href="/">Accessibility statment</a>
           </li>
         </ul>
-        <div className="lang_bottom">
-          <button>Language</button>
-        </div>
       </div>
       <div className="bottom_logo_container">
         <a href="/">

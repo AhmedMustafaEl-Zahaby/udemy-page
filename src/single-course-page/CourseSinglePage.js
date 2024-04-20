@@ -14,6 +14,7 @@ import WhatYouWillLearn from "./WhatYouWillLearn";
 import CourseContent from "./CourseContent";
 import Descriptions from "./Descriptions";
 import Text from "./Desic.json";
+import db from "../db.json";
 function CourseSinglePage() {
   const { courseID } = useParams();
   const [isPending, setPending] = useState(true);
@@ -44,19 +45,16 @@ function CourseSinglePage() {
       "You've taken a lengthy and boring coding class, but you're clueless about applying these concepts to build your ideas. The Codex shows you how to build fun, practical projects. Now, you can stand out from the crowd and land your dream job.",
   };
   useEffect(() => {
-    fetch("http://localhost:3000/singleCourse")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setData(data[courseID]);
-        setPending(false);
-        setSections(data[courseID]["curriculum_context"]["data"]["sections"]);
-      })
-      .catch((error) => {
-        setSections([]);
-      });
-    return () => {};
+    // Accessing the singleCourse data from db.json directly
+    const singleCourseData = db.singleCourse[courseID];
+    if (singleCourseData) {
+      setData(singleCourseData);
+      setPending(false);
+      setSections(singleCourseData.curriculum_context.data.sections);
+    } else {
+      // Handling the case when singleCourseData is not found
+      setSections([]);
+    }
   }, [courseID]);
   name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
